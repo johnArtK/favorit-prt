@@ -18,7 +18,7 @@ export const DataLoader = ({ query, emptyText, children }) => {
       <Result
         status="error"
         title={error.message}
-        extra={<Button onClick={refetch}>Повторить</Button>}
+        extra={error.retryable && <Button onClick={refetch}>Повторить</Button>}
       />
     )
   }
