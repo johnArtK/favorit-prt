@@ -2,7 +2,7 @@ const API_ERRORS = {
   'Empty key!': 'Не указан ключ доступа к API',
   'Invalid key client!': 'Неверный ключ доступа к API',
   'Empty number goods!': 'Не указан артикул',
-  'Request quota exceeded!': 'Поставщик не отдаёт данные по этому производителю: лимит ключа API',
+  'Request quota exceeded!': 'Превышен лимит запросов. Попробуйте позже',
 }
 
 const NETWORK_ERRORS = {
