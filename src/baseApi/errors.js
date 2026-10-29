@@ -20,7 +20,6 @@ export const normalizeError = (error) => {
 
   let message
   if (apiMessage) message = API_ERRORS[apiMessage] ?? apiMessage
-  else if (status === 504) message = 'Поставщик слишком долго отвечает. Попробуйте ещё раз'
   else if (isServerError) message = 'Сервер поставщика недоступен'
   else message = NETWORK_ERRORS[error.status] ?? 'Что-то пошло не так'
 
